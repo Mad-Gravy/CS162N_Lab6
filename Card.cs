@@ -19,7 +19,7 @@ namespace BlackJackClasses
             set
             {
                 if (value >= 1 && value <= 13)
-                    value = value;
+                    this.value = value;
                 else
                     throw new ArgumentException("Value must be between 1 and 13.");
             }
@@ -31,7 +31,7 @@ namespace BlackJackClasses
             set
             {
                 if (value >= 1 && value <= 4)
-                    suit = value;
+                    this.suit = value;
                 else
                     throw new ArgumentException("Suit must be between 1 and 4.");
             }

@@ -9,7 +9,7 @@ namespace BlackJackClasses
     public class Deck
     {
         // can instantiate the list here OR in the constructor
-        private List<Card> cards = new List<Card>();
+        protected List<Card> cards = new List<Card>();
 
         public Deck()
         {
@@ -39,7 +39,7 @@ namespace BlackJackClasses
             }
         }
 
-        public Card this[int i]
+        public Card this[int i] // indexer, allows you to access a card in the deck by its index
         {
             get
             {
@@ -48,7 +48,7 @@ namespace BlackJackClasses
         }
 
         // dealing from the deck should return a card object
-        public Card Deal()
+        public Card Draw()
         {
             // if the deck still has cards
             if (!IsEmpty)
